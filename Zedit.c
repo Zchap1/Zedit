@@ -27,7 +27,7 @@ void do_calculate(GtkWidget *calculate, gpointer data) {
     gtk_label_set_text(GTK_LABEL(nameinfo), buffer);
 }
 
-// gcc 007_gtk.c -o 007_gtk `pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0`
+// gcc Zedit.c -o Zedit `pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0`
 int main(int argc, char **argv) {
     GtkWidget *window, *grid, *calculate;
     gtk_init(&argc, &argv);
@@ -42,21 +42,8 @@ int main(int argc, char **argv) {
     grid = gtk_grid_new();
     gtk_container_add(GTK_CONTAINER(window), grid);
 //add grid to window
-
-
-
-
-    txt = gtk_text_view_new();
-    
-
-
-
-
-
-filetitle = gtk_entry_new();
-
-
-
+    txt = gtk_text_view_new()
+    filetitle = gtk_entry_new();
 //two entries
     gtk_widget_set_size_request(txt,640,480);//set it a decent size
 //button stuff
