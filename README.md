@@ -1,2 +1,3 @@
 # Zedit
-Cool text editor I made
+Basic text editor created to learn C and gtk!
+Enjoy
